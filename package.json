@@ -3,5 +3,10 @@
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.210",
     "chokidar": "^3.5.3"
+  },
+  "scripts": {
+    "build": "swc -c swc.config.js",
+    "test": "swc -c swc.config.js -t test",
+    "watch": "swc src/*.ts -d dest/ --watch"
   }
 }
